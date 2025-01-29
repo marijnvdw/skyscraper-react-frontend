@@ -6,6 +6,7 @@ import SkyscraperList from "./SkyscraperList.jsx";
 import SkyscraperCreateForm from "./SkyscraperCreateForm.jsx";
 import SkyscraperDetail from "./SkyscraperDetail.jsx";
 import SkyscraperEdit from "./SkyscraperEdit.jsx";
+import PageNotFound from "./PageNotFound.jsx";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,13 @@ const router = createBrowserRouter([
             {
                 path: '/skyscraper/edit/:id',
                 element: <SkyscraperEdit/>
+            },
+            {
+                path: '/skyscraper/pagenotfound',
+                element: <PageNotFound/>
+            },{
+                path: '*',
+                element: <PageNotFound/>
             }
 
         ]

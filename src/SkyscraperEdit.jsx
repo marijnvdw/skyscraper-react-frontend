@@ -25,7 +25,6 @@ function SkyscraperEdit() {
         }
     };
 
-    // Update product data
     const handleSave = async (updatedProduct) => {
         console.log('it is edited')
         await fetch(`http://145.24.223.35:8005/skyscraper/${id}`, {
